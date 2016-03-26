@@ -102,10 +102,10 @@
  */
 #define WS(weakSelf) __weak __typeof(&*self)weakSelf = self;
 
-#define autoSizeScaleX  KScreenWidth / 320.0
-#define autoSizeScaleY  KScreenHeight / 480.0
+#define autoSizeScaleX  SCREEN_WIDTH / 320.0
+#define autoSizeScaleY  SCREEN_HEIGHT / 480.0
 
-#define autoFontSizeScale(font)  (font * KScreenWidth / 320.0)
+#define autoFontSizeScale(font)  (font * SCREEN_WIDTH / 320.0)
 
 #define WEAKSELF typeof(self) __weak weakSelf = self;
 #define STRONGSELF typeof(weakSelf) __strong strongSelf = weakSelf;
